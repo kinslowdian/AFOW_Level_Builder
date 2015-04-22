@@ -22,6 +22,7 @@
 		public var UNDERGROUND:int 	= 4;
 		public var WALL:int			= 5;
 		public var WATER:int 		= 6;
+		public var WATER_EDGE:int 	= 7;
 		
 		private var levelSetup:AFOW_Levels;
 		
@@ -46,6 +47,7 @@
 			tileArray.push("underground");
 			tileArray.push("wall");
 			tileArray.push("water");
+			tileArray.push("waterEdge");
 			
 			logic();			
 		}
@@ -91,14 +93,13 @@
 			{
 				var json:String = "";
 				var tile = "";
-				var ender = ",";
 				var o:MovieClip = MovieClip(this.getChildAt(i));
 				var x:Number = o.x / 80;
 				var y:Number = o.y / 80;
 				var w:Number = o.width / 80;
 				var h:Number = o.height / 80;
 				
-				json = '{' + '"x": ' + x + ', "y": ' + y + ', "w": ' + w + ', "h": ' + h + ', "p": "' + dataType + '"}' + ender;
+				json = '{' + '"x": ' + x + ', "y": ' + y + ', "w": ' + w + ', "h": ' + h + ', "p": "' + dataType + '"},';
 				
 				
 				if(o.numChildren == 1)
@@ -138,12 +139,12 @@
 				var h:Number = o.height / 80;
 				var level:int = o._level;
 				var exit:int = o._exit;
-				var direction:String = "DIRECTION";
+				var direction:String = o._direction;
 				var spawn:Number = _gameLevel;
 				var bossLevel:Boolean = o._bossLevel;
 				var p:String = "portal_";
 					
-				json = '{\n' + '"num": ' + num + ',\n"x": ' + x + ',\n"y": ' + y + ',\n"w": ' + w + ',\n"h": ' + h + ',\n"level": ' + level + ',\n"exit": ' + exit + ',\n"direction": ' + direction + ',\n"spawn": ' + spawn + ',\n"bossLevel": ' + bossLevel + ',\n"p": "' + p + '"\n},';
+				json = '{\n' + '"num": ' + num + ',\n"x": ' + x + ',\n"y": ' + y + ',\n"w": ' + w + ',\n"h": ' + h + ',\n"level": ' + level + ',\n"exit": ' + exit + ',\n"direction": ' + '"' + direction + '"' + ',\n"spawn": ' + spawn + ',\n"bossLevel": ' + bossLevel + ',\n"p": "' + p + '"\n},';
 					
 				trace(json);
 				
