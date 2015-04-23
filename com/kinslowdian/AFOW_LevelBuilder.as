@@ -3,6 +3,7 @@
 	import flash.display.*;
 	
 	import com.kinslowdian.AFOW_Levels;
+	import com.kinslowdian.AFOW_Enemies;
 	
 	public class AFOW_LevelBuilder extends MovieClip
 	{
@@ -11,8 +12,9 @@
 		public var _gameLevel:int;
 		
 		public var tileArray:Array;
-		public var tileData:Array
-		public var portals:Array
+		public var tileData:Array;
+		public var portals:Array;
+		public var enemies:Array;
 		
 		// IDS
 		public var TREES:int 		= 0;
@@ -25,6 +27,7 @@
 		public var WATER_EDGE:int 	= 7;
 		
 		private var levelSetup:AFOW_Levels;
+		private var enemySetup:AFOW_Enemies;
 		
 		public function AFOW_LevelBuilder()
 		{
@@ -33,6 +36,7 @@
 			tileArray = new Array();
 			tileData = new Array();
 			portals = new Array();
+			enemies = new Array();
 			
 			build();
 		}
@@ -58,16 +62,36 @@
 			levelSetup = new AFOW_Levels(this);
 			levelSetup.create();
 			
+			enemySetup = new AFOW_Enemies(this);
+			enemySetup.create();
+			
 			trace("AFOW LEVEL " + _gameLevel);
 			trace("");
 			
 			run();
 		}
 		
-		public function logicAdd():void
+		public function logicAdd(arrayData:String):void
 		{
-			// AUTO PUSH
-			portals.push(MovieClip(this["p" + portals.length]));
+			switch(arrayData)
+			{
+				case "PORTAL":
+				{
+					// AUTO PUSH
+					portals.push(MovieClip(this["p" + portals.length]));
+					
+					break;
+				}
+				
+				case "ENEMY":
+				{
+					// AUTO PUSH
+					enemies.push(MovieClip(this["e" + enemies.length]));
+					
+					break;
+				}
+			}
+
 		}
 		
 		private function run():void
@@ -79,7 +103,12 @@
 			}
 			
 			// PORTAL JSON
-			portal_json();	
+			portal_json();
+			
+			if(enemies.length > 0)
+			{
+				enemy_json();
+			}	
 		}
 		
 		
@@ -124,6 +153,7 @@
 		private function portal_json():void
 		{
 			// OUTPUT BREAK
+			trace("!!!! PORTAL LIST");
 			trace("");
 			
 			for(var i:int = 0; i < portals.length; i++)
@@ -152,6 +182,38 @@
 				trace("");
 			}
 		
+		}
+		
+		private function enemy_json():void
+		{
+			// OUTPUT BREAK
+			trace("!!!! ENEMY LIST");
+			trace("");
+			
+			for(var i:int = 0; i < enemies.length; i++)
+			{
+				var o:MovieClip = MovieClip(enemies[i]);
+				var tile:String = String(o.toString());
+				
+				var json:String = "";
+				var num:int = i;
+				var x:Number = o.x / 80;
+				var y:Number = o.y / 80;
+				var w:Number = o.width / 80;
+				var h:Number = o.height / 80;
+				var n_id:String = '"level' + _gameLevel + '_' + o._characterType + num + '"';
+				var t_id:String = '"' + o._characterType + '"';
+				var l:int = o._power;
+				var known:String = o._known;
+				var spawn:Number = _gameLevel;
+					
+				json = '{\n"x": ' + x + ',\n"y": ' + y + ',\n"w": ' + w + ',\n"h": ' + h + ',\n"n": ' + n_id + ',\n"t": ' + t_id + ',\n"l": ' + l + ',\n"known": ' + '"' + known + '"' + ',\n"spawn": ' + spawn + '\n},';
+					
+				trace(json);
+				
+				// OUTPUT BREAK
+				trace("");
+			}
 		}
 	}
 }
