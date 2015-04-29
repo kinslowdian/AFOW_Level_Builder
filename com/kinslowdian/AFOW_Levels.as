@@ -13,7 +13,7 @@
 		
 		public function create():void
 		{
-			level11();
+			level16();
 		}
 		
 		// TEST ONLY
@@ -331,6 +331,290 @@
 			BOARD.p6._level = 12;
 			BOARD.p6._direction = "LEFT";
 			BOARD.p6._bossLevel = false;
+			BOARD.logicAdd("PORTAL");			
+		}
+		
+		private function level12():void
+		{
+			// LEVEL SETUP
+			BOARD._gameLevel = 12;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_HEAVY, BOARD.WATER, BOARD.WATER_EDGE];
+			
+			// PORTAL TRAVEL
+			BOARD.p0._exit = 6;
+			BOARD.p0._level = 11;
+			BOARD.p0._direction = "DOWN";
+			BOARD.p0._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p1._exit = 4;
+			BOARD.p1._level = BOARD._gameLevel;
+			BOARD.p1._direction = "UP";
+			BOARD.p1._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p2._exit = 3;
+			BOARD.p2._level = BOARD._gameLevel;
+			BOARD.p2._direction = "UP";
+			BOARD.p2._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p3._exit = 2;
+			BOARD.p3._level = BOARD._gameLevel;
+			BOARD.p3._direction = "DOWN";
+			BOARD.p3._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p4._exit = 1;
+			BOARD.p4._level = BOARD._gameLevel;
+			BOARD.p4._direction = "DOWN";
+			BOARD.p4._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p5._exit = 0;
+			BOARD.p5._level = 13;
+			BOARD.p5._direction = "DOWN";
+			BOARD.p5._bossLevel = false;
+			BOARD.logicAdd("PORTAL");			
+		}
+		
+		private function level13():void
+		{
+			// LEVEL SETUP
+			BOARD._gameLevel = 13;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_HEAVY, BOARD.GRASS_LIGHT, BOARD.WATER, BOARD.WATER_EDGE];
+			
+			// PORTAL TRAVEL
+			BOARD.p0._exit = 5;
+			BOARD.p0._level = 12;
+			BOARD.p0._direction = "DOWN";
+			BOARD.p0._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p1._exit = 1;
+			BOARD.p1._level = 14;
+			BOARD.p1._direction = "RIGHT";
+			BOARD.p1._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p2._exit = 2;
+			BOARD.p2._level = 14;
+			BOARD.p2._direction = "RIGHT";
+			BOARD.p2._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p3._exit = 4;
+			BOARD.p3._level = BOARD._gameLevel;
+			BOARD.p3._direction = "LEFT";
+			BOARD.p3._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p4._exit = 3;
+			BOARD.p4._level = BOARD._gameLevel;
+			BOARD.p4._direction = "LEFT";
+			BOARD.p4._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p5._exit = 0;
+			BOARD.p5._level = 15;
+			BOARD.p5._direction = "UP";
+			BOARD.p5._bossLevel = false;
+			BOARD.logicAdd("PORTAL");			
+		}
+		
+		private function level14():void
+		{
+			// LEVEL SETUP
+			BOARD._gameLevel = 14;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.UNDERGROUND, BOARD.WALL];
+			
+			// PORTAL TRAVEL
+			BOARD.p0._exit = 6;
+			BOARD.p0._level = BOARD._gameLevel;
+			BOARD.p0._direction = "UP";
+			BOARD.p0._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p1._exit = 1;
+			BOARD.p1._level = 13;
+			BOARD.p1._direction = "RIGHT";
+			BOARD.p1._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p2._exit = 2;
+			BOARD.p2._level = 13;
+			BOARD.p2._direction = "DOWN";
+			BOARD.p2._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p3._exit = 9;
+			BOARD.p3._level = BOARD._gameLevel;
+			BOARD.p3._direction = "RIGHT";
+			BOARD.p3._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p4._exit = 5;
+			BOARD.p4._level = BOARD._gameLevel;
+			BOARD.p4._direction = "UP";
+			BOARD.p4._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p5._exit = 4;
+			BOARD.p5._level = BOARD._gameLevel;
+			BOARD.p5._direction = "RIGHT";
+			BOARD.p5._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p6._exit = 0;
+			BOARD.p6._level = BOARD._gameLevel;
+			BOARD.p6._direction = "UP";
+			BOARD.p6._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p7._exit = 12;
+			BOARD.p7._level = BOARD._gameLevel;
+			BOARD.p7._direction = "RIGHT";
+			BOARD.p7._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p8._exit = 11;
+			BOARD.p8._level = BOARD._gameLevel;
+			BOARD.p8._direction = "UP";
+			BOARD.p8._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p9._exit = 3;
+			BOARD.p9._level = BOARD._gameLevel;
+			BOARD.p9._direction = "UP";
+			BOARD.p9._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p10._exit = 0;
+			BOARD.p10._level = BOARD._gameLevel;
+			BOARD.p10._direction = "DOWN";
+			BOARD.p10._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p11._exit = 1;
+			BOARD.p11._level = BOARD._gameLevel;
+			BOARD.p11._direction = "LEFT";
+			BOARD.p11._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p12._exit = 7;
+			BOARD.p12._level = BOARD._gameLevel;
+			BOARD.p12._direction = "DOWN";
+			BOARD.p12._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p13._exit = 13;
+			BOARD.p13._level = BOARD._gameLevel;
+			BOARD.p13._direction = "DOWN";
+			BOARD.p13._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p14._exit = 10;
+			BOARD.p14._level = BOARD._gameLevel;
+			BOARD.p14._direction = "RIGHT";
+			BOARD.p14._bossLevel = false;
+			BOARD.logicAdd("PORTAL");		
+		}
+		
+		private function level15():void
+		{
+			// LEVEL SETUP
+			BOARD._gameLevel = 15;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY, BOARD.WATER, BOARD.WATER_EDGE];
+			
+			// PORTAL TRAVEL
+			BOARD.p0._exit = 5;
+			BOARD.p0._level = 13;
+			BOARD.p0._direction = "DOWN";
+			BOARD.p0._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p1._exit = 6;
+			BOARD.p1._level = BOARD._gameLevel;
+			BOARD.p1._direction = "DOWN";
+			BOARD.p1._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p2._exit = 3;
+			BOARD.p2._level = BOARD._gameLevel;
+			BOARD.p2._direction = "DOWN";
+			BOARD.p2._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p3._exit = 0;
+			BOARD.p3._level = BOARD._gameLevel;
+			BOARD.p3._direction = "DOWN";
+			BOARD.p3._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p4._exit = 7;
+			BOARD.p4._level = BOARD._gameLevel;
+			BOARD.p4._direction = "DOWN";
+			BOARD.p4._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p5._exit = 4;
+			BOARD.p5._level = BOARD._gameLevel;
+			BOARD.p5._direction = "DOWN";
+			BOARD.p5._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p6._exit = 1;
+			BOARD.p6._level = BOARD._gameLevel;
+			BOARD.p6._direction = "DOWN";
+			BOARD.p6._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p7._exit = 4;
+			BOARD.p7._level = BOARD._gameLevel;
+			BOARD.p7._direction = "DOWN";
+			BOARD.p7._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p8._exit = 0;
+			BOARD.p8._level = 16;
+			BOARD.p8._direction = "UP";
+			BOARD.p8._bossLevel = false;
+			BOARD.logicAdd("PORTAL");			
+		}
+		
+		private function level16():void
+		{
+			// LEVEL SETUP
+			BOARD._gameLevel = 16;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY, BOARD.WATER, BOARD.WATER_EDGE];
+			
+			// PORTAL TRAVEL
+			BOARD.p0._exit = 8;
+			BOARD.p0._level = 15;
+			BOARD.p0._direction = "DOWN";
+			BOARD.p0._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p1._exit = 2;
+			BOARD.p1._level = 3;
+			BOARD.p1._direction = "DOWN";
+			BOARD.p1._bossLevel = false;
+			BOARD.logicAdd("PORTAL");
+			
+			BOARD.p2._exit = 0;
+			BOARD.p2._level = 17;
+			BOARD.p2._direction = "DOWN";
+			BOARD.p2._bossLevel = false;
 			BOARD.logicAdd("PORTAL");			
 		}
 	}

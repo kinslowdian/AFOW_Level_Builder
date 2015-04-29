@@ -108,7 +108,9 @@
 			if(enemies.length > 0)
 			{
 				enemy_json();
-			}	
+			}
+			
+			gate_json();	
 		}
 		
 		
@@ -214,6 +216,50 @@
 				// OUTPUT BREAK
 				trace("");
 			}
+		}
+		
+		private function gate_json():void
+		{
+			var gateCount:int = 0;
+			
+			trace("");
+			trace("GATES!!!");
+			
+			for(var i:int = 0; i < this.numChildren; i++)
+			{
+				var o:MovieClip = MovieClip(this.getChildAt(i));
+				var tile:String = o.toString();
+				
+				if(tile === "[object gate]")
+				{
+					/*
+					{
+						"x": 0,
+						"y": 21.5,
+						"w": 4,
+						"h": 2,
+						"c_cl": "layer-field-gate-area",
+						"n": "level0_gate0",
+						"spawn": 0
+					}
+					*/				
+				
+					var json:String = "";
+					var x:Number = o.x / 80;
+					var y:Number = o.y / 80;
+					var w:Number = o.width / 80;
+					var h:Number = o.height / 80;
+					var c:String = '"layer-field-gate-area"';
+					var n_id:String = '"level' + _gameLevel + '_gate' + gateCount + '"';
+					var spawn:int = _gameLevel;
+					
+					json = '{\n"x": ' + x + ',\n"y": ' + y + ',\n"w": ' + w + ',\n"h": ' + h + ',\n"c_cl": ' + c + ',\n"n": ' + n_id + ',\n"spawn": ' + spawn + '\n},';
+				
+					trace(json);
+					
+					gateCount++;
+				}
+			}			
 		}
 	}
 }

@@ -13,7 +13,7 @@ package com.kinslowdian
 		
 		public function create():void
 		{
-			level11();
+			level16();
 		}
 		
 		// TEST ONLY
@@ -199,6 +199,171 @@ package com.kinslowdian
 			BOARD.e24._known = "the crow captain";
 			BOARD.e24._power = 24;
 			BOARD.logicAdd("ENEMY");
-		}	
+		}
+		
+		private function level12():void
+		{
+			BOARD.e0._characterType = "rabbit";
+			BOARD.e0._known = "a rabbit hermit";
+			BOARD.e0._power = 6;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level13():void
+		{
+			BOARD.e0._characterType = "rabbit";
+			BOARD.e0._known = "a guard of the warren";
+			BOARD.e0._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "rabbit";
+			BOARD.e1._known = "a guard of the warren";
+			BOARD.e1._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "rabbit";
+			BOARD.e2._known = "a guard of the warren";
+			BOARD.e2._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "rabbit";
+			BOARD.e3._known = "a guard of the warren";
+			BOARD.e3._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "rabbit";
+			BOARD.e4._known = "a guard of the warren";
+			BOARD.e4._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "rabbit";
+			BOARD.e5._known = "a guard of the warren";
+			BOARD.e5._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "rabbit";
+			BOARD.e6._known = "a general of the warren";
+			BOARD.e6._power = 9;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "rabbit";
+			BOARD.e7._known = "a general of the warren";
+			BOARD.e7._power = 9;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level14():void
+		{
+			BOARD.e0._characterType = "rabbit";
+			BOARD.e0._known = "an off duty rabbit";
+			BOARD.e0._power = 12;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "rabbit";
+			BOARD.e1._known = "an off duty rabbit";
+			BOARD.e1._power = 12;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "rabbit";
+			BOARD.e2._known = "an off duty rabbit";
+			BOARD.e2._power = 12;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "rabbit";
+			BOARD.e3._known = "an off duty rabbit";
+			BOARD.e3._power = 12;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "rabbit";
+			BOARD.e4._known = "an off duty rabbit";
+			BOARD.e4._power = 12;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "rabbit";
+			BOARD.e5._known = "the left paw champion";
+			BOARD.e5._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "rabbit";
+			BOARD.e6._known = "the right paw champion";
+			BOARD.e6._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "rabbit";
+			BOARD.e7._known = "a lost rabbit";
+			BOARD.e7._power = 0;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "rabbit";
+			BOARD.e8._known = "a lost rabbit";
+			BOARD.e8._power = 0;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level15():void
+		{
+			BOARD.e0._characterType = "rabbit";
+			BOARD.e0._known = "the field warren guard";
+			BOARD.e0._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "rabbit";
+			BOARD.e1._known = "the field warren guard";
+			BOARD.e1._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "rabbit";
+			BOARD.e2._known = "the wormhole guard";
+			BOARD.e2._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "rabbit";
+			BOARD.e3._known = "the wormhole guard";
+			BOARD.e3._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "rabbit";
+			BOARD.e4._known = "the dark rabbit of wormholes";
+			BOARD.e4._power = 40;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "rabbit";
+			BOARD.e5._known = "the dark rabbit of wormholes";
+			BOARD.e5._power = 40;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "rabbit";
+			BOARD.e6._known = "the wormhole guard";
+			BOARD.e6._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "rabbit";
+			BOARD.e7._known = "an inexperienced rabbit guard";
+			BOARD.e7._power = 12;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		function level16():void
+		{
+			BOARD.e0._characterType = "rabbit";
+			BOARD.e0._known = "the rabbit locksmith";
+			BOARD.e0._power = 30;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "rabbit";
+			BOARD.e1._known = "the rabbit locksmith";
+			BOARD.e1._power = 30;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "rabbit";
+			BOARD.e2._known = "the rabbit gate keeper";
+			BOARD.e2._power = 40;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "rabbit";
+			BOARD.e3._known = "the rabbit gate keeper";
+			BOARD.e3._power = 40;
+			BOARD.logicAdd("ENEMY");			
+		}
 	}
 }
