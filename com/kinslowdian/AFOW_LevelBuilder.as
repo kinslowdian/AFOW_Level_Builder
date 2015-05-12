@@ -224,6 +224,7 @@
 			
 			trace("");
 			trace("GATES!!!");
+			trace("");
 			
 			for(var i:int = 0; i < this.numChildren; i++)
 			{
@@ -256,6 +257,9 @@
 					json = '{\n"x": ' + x + ',\n"y": ' + y + ',\n"w": ' + w + ',\n"h": ' + h + ',\n"c_cl": ' + c + ',\n"n": ' + n_id + ',\n"spawn": ' + spawn + '\n},';
 				
 					trace(json);
+					
+					// OUTPUT BREAK
+					trace("");
 					
 					gateCount++;
 				}

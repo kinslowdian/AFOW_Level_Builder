@@ -13,7 +13,7 @@ package com.kinslowdian
 		
 		public function create():void
 		{
-			level16();
+			// level17();
 		}
 		
 		// TEST ONLY
@@ -343,7 +343,7 @@ package com.kinslowdian
 			BOARD.logicAdd("ENEMY");			
 		}
 		
-		function level16():void
+		private function level16():void
 		{
 			BOARD.e0._characterType = "rabbit";
 			BOARD.e0._known = "the rabbit locksmith";
@@ -363,6 +363,59 @@ package com.kinslowdian
 			BOARD.e3._characterType = "rabbit";
 			BOARD.e3._known = "the rabbit gate keeper";
 			BOARD.e3._power = 40;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level17():void
+		{
+			BOARD.e0._characterType = "rabbit";
+			BOARD.e0._known = "a rabbit of resentment";
+			BOARD.e0._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "rabbit";
+			BOARD.e1._known = "a rabbit of resentment";
+			BOARD.e1._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "rabbit";
+			BOARD.e2._known = "a rabbit of resentment";
+			BOARD.e2._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "rabbit";
+			BOARD.e3._known = "a rabbit of resentment";
+			BOARD.e3._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "rabbit";
+			BOARD.e4._known = "a rabbit of resentment";
+			BOARD.e4._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "rabbit";
+			BOARD.e5._known = "a rabbit of resentment";
+			BOARD.e5._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "rabbit";
+			BOARD.e6._known = "a rabbit of resentment";
+			BOARD.e6._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "rabbit";
+			BOARD.e7._known = "a rabbit of resentment";
+			BOARD.e7._power = 6;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "crow";
+			BOARD.e8._known = "the crow of confusion";
+			BOARD.e8._power = 9;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "rabbit";
+			BOARD.e9._known = "the rabbit of revenge";
+			BOARD.e9._power = 9;
 			BOARD.logicAdd("ENEMY");			
 		}
 	}
