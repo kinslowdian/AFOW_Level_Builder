@@ -13,7 +13,7 @@
 		
 		public function create():void
 		{
-			level1994();
+			level16();
 		}
 		
 		// TEST ONLY
@@ -598,6 +598,15 @@
 			// LEVEL TILES - ARTWORK
 			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY, BOARD.WATER, BOARD.WATER_EDGE];
 			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forestEvening0 collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLightEvening0";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_HEAVY]] = "pixels_flowerHeavyEvening0";
+			BOARD.classTypes[BOARD.tileArray[BOARD.WATER]] = "pixels_waterBase waterPool collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.WATER_EDGE]] = "pixels_waterEdge waterEdge tween-waterEdge";
+			BOARD.classTypes.portal = "portal_top_evening0";
+			
 			// PORTAL TRAVEL
 			BOARD.p0._exit = 8;
 			BOARD.p0._level = 15;
@@ -625,6 +634,13 @@
 			
 			// LEVEL TILES - ARTWORK
 			BOARD.tileData = [BOARD.UNDERGROUND, BOARD.WALL];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.UNDERGROUND]] = "pixels_undeground_floor";
+			BOARD.classTypes[BOARD.tileArray[BOARD.WALL]] = "collideCheck-field";
+			BOARD.classTypes.portal = "portal_top_underground";
+			
 			
 			// PORTAL TRAVEL
 			BOARD.p0._exit = 2;

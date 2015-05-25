@@ -26,6 +26,8 @@
 		public var WATER:int 		= 6;
 		public var WATER_EDGE:int 	= 7;
 		
+		public var classTypes:Object;
+		
 		private var levelSetup:AFOW_Levels;
 		private var enemySetup:AFOW_Enemies;
 		
@@ -113,6 +115,13 @@
 			gate_json();	
 		}
 		
+		private function returnClass(requested:String):String
+		{
+			var classWrite:String = classTypes[requested];
+			
+			return classWrite;
+		}
+		
 		
 		private function tile_json(dataType:String):void
 		{	
@@ -124,13 +133,16 @@
 			{
 				var json:String = "";
 				var tile = "";
+				var classAdd:String = "";
 				var o:MovieClip = MovieClip(this.getChildAt(i));
 				var x:Number = o.x / 80;
 				var y:Number = o.y / 80;
 				var w:Number = o.width / 80;
 				var h:Number = o.height / 80;
 				
-				json = '{' + '"x": ' + x + ', "y": ' + y + ', "w": ' + w + ', "h": ' + h + ', "p": "' + dataType + '"},';
+				classTypes ? classAdd = returnClass(dataType) : classAdd = dataType;
+				
+				json = '{' + '"x": ' + x + ', "y": ' + y + ', "w": ' + w + ', "h": ' + h + ', "p": "' + classAdd + '"},';
 				
 				
 				if(o.numChildren == 1)
@@ -162,6 +174,7 @@
 			{
 				var o:MovieClip = MovieClip(portals[i]);
 				var tile:String = String(o.toString());
+				var classAdd:String = "";
 				
 				var json:String = "";
 				var num:int = i;
@@ -175,8 +188,10 @@
 				var spawn:Number = _gameLevel;
 				var bossLevel:Boolean = o._bossLevel;
 				var p:String = "portal_";
-					
-				json = '{\n' + '"num": ' + num + ',\n"x": ' + x + ',\n"y": ' + y + ',\n"w": ' + w + ',\n"h": ' + h + ',\n"level": ' + level + ',\n"exit": ' + exit + ',\n"direction": ' + '"' + direction + '"' + ',\n"spawn": ' + spawn + ',\n"bossLevel": ' + bossLevel + ',\n"p": "' + p + '"\n},';
+				
+				classTypes ? classAdd = returnClass("portal") : classAdd = p;
+				
+				json = '{\n' + '"num": ' + num + ',\n"x": ' + x + ',\n"y": ' + y + ',\n"w": ' + w + ',\n"h": ' + h + ',\n"level": ' + level + ',\n"exit": ' + exit + ',\n"direction": ' + '"' + direction + '"' + ',\n"spawn": ' + spawn + ',\n"bossLevel": ' + bossLevel + ',\n"p": "' + classAdd + '"\n},';
 					
 				trace(json);
 				
