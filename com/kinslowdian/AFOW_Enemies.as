@@ -13,7 +13,7 @@ package com.kinslowdian
 		
 		public function create():void
 		{
-			// level17();
+			level18();
 		}
 		
 		// TEST ONLY
@@ -370,52 +370,85 @@ package com.kinslowdian
 		{
 			BOARD.e0._characterType = "rabbit";
 			BOARD.e0._known = "a rabbit of resentment";
-			BOARD.e0._power = 6;
+			BOARD.e0._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
 			BOARD.e1._characterType = "rabbit";
 			BOARD.e1._known = "a rabbit of resentment";
-			BOARD.e1._power = 6;
+			BOARD.e1._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
 			BOARD.e2._characterType = "rabbit";
 			BOARD.e2._known = "a rabbit of resentment";
-			BOARD.e2._power = 6;
+			BOARD.e2._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
 			BOARD.e3._characterType = "rabbit";
 			BOARD.e3._known = "a rabbit of resentment";
-			BOARD.e3._power = 6;
+			BOARD.e3._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
 			BOARD.e4._characterType = "rabbit";
 			BOARD.e4._known = "a rabbit of resentment";
-			BOARD.e4._power = 6;
+			BOARD.e4._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
 			BOARD.e5._characterType = "rabbit";
 			BOARD.e5._known = "a rabbit of resentment";
-			BOARD.e5._power = 6;
+			BOARD.e5._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
 			BOARD.e6._characterType = "rabbit";
 			BOARD.e6._known = "a rabbit of resentment";
-			BOARD.e6._power = 6;
+			BOARD.e6._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
 			BOARD.e7._characterType = "rabbit";
 			BOARD.e7._known = "a rabbit of resentment";
-			BOARD.e7._power = 6;
+			BOARD.e7._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
-			BOARD.e8._characterType = "crow";
-			BOARD.e8._known = "the crow of confusion";
-			BOARD.e8._power = 9;
+			BOARD.e8._characterType = "rabbit";
+			BOARD.e8._known = "the crow of resentment";
+			BOARD.e8._power = 20;
 			BOARD.logicAdd("ENEMY");
 			
 			BOARD.e9._characterType = "rabbit";
 			BOARD.e9._known = "the rabbit of revenge";
-			BOARD.e9._power = 9;
+			BOARD.e9._power = 20;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level18():void
+		{
+			BOARD.e0._characterType = "cat";
+			BOARD.e0._known = "cat trickster";
+			BOARD.e0._power = 12;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "cat";
+			BOARD.e1._known = "cat trickster";
+			BOARD.e1._power = 12;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "cat";
+			BOARD.e2._known = "cat trickster";
+			BOARD.e2._power = 12;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "cat";
+			BOARD.e3._known = "cat guard";
+			BOARD.e3._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "cat";
+			BOARD.e4._known = "cat guard";
+			BOARD.e4._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "cat";
+			BOARD.e5._known = "hunter of mice";
+			BOARD.e5._power = 36;
 			BOARD.logicAdd("ENEMY");			
 		}
 	}

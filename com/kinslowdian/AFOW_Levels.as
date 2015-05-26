@@ -4,16 +4,20 @@
 
 	public class AFOW_Levels
 	{
+		public var useAuto:Boolean;
+		
 		private var BOARD:MovieClip;
 		
 		public function AFOW_Levels(link:MovieClip)
 		{
+			useAuto = false;
+			
 			BOARD = link;
 		}
 		
 		public function create():void
 		{
-			level16();
+			level18();
 		}
 		
 		// TEST ONLY
@@ -678,6 +682,26 @@
 			BOARD.p5._direction = "LEFT";
 			BOARD.p5._bossLevel = false;
 			BOARD.logicAdd("PORTAL");			
+		}
+		
+		private function level18():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 18;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_late collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_late";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_HEAVY]] = "pixels_flowerHeavy_late";
+			BOARD.classTypes.portal = "portal_top_late";
+			
+			BOARD.logicAddPortalsAuto(11);			
 		}
 		
 		
