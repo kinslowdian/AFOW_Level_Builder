@@ -13,7 +13,7 @@ package com.kinslowdian
 		
 		public function create():void
 		{
-			level18();
+			level27();
 		}
 		
 		// TEST ONLY
@@ -450,6 +450,448 @@ package com.kinslowdian
 			BOARD.e5._known = "hunter of mice";
 			BOARD.e5._power = 36;
 			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level19():void
+		{
+			BOARD.e0._characterType = "cat";
+			BOARD.e0._known = "feline gate keeper";
+			BOARD.e0._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "cat";
+			BOARD.e1._known = "feline gate keeper";
+			BOARD.e1._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "cat";
+			BOARD.e2._known = "feline wormhole keeper";
+			BOARD.e2._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "cat";
+			BOARD.e3._known = "feline gate keeper";
+			BOARD.e3._power = 36;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level20():void
+		{
+			BOARD.e0._characterType = "fox";
+			BOARD.e0._known = "red tailed sneak";
+			BOARD.e0._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "fox";
+			BOARD.e1._known = "wise young fox";
+			BOARD.e1._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "fox";
+			BOARD.e2._known = "wise young fox";
+			BOARD.e2._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "fox";
+			BOARD.e3._known = "red tailed sneak";
+			BOARD.e3._power = 24;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "fox";
+			BOARD.e4._known = "wise old fox";
+			BOARD.e4._power = 48;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level21():void
+		{
+			BOARD.e0._characterType = "fox";
+			BOARD.e0._known = "a sneaky fox";
+			BOARD.e0._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "fox";
+			BOARD.e1._known = "a sneaky fox";
+			BOARD.e1._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "fox";
+			BOARD.e2._known = "a sneaky fox";
+			BOARD.e2._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "fox";
+			BOARD.e3._known = "a sneaky fox";
+			BOARD.e3._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "fox";
+			BOARD.e4._known = "a sneaky fox";
+			BOARD.e4._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "fox";
+			BOARD.e5._known = "a sneaky fox";
+			BOARD.e5._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "fox";
+			BOARD.e6._known = "a sneaky fox";
+			BOARD.e6._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "fox";
+			BOARD.e7._known = "a sneaky fox";
+			BOARD.e7._power = 36;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "fox";
+			BOARD.e8._known = "a feral fox";
+			BOARD.e8._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "fox";
+			BOARD.e9._known = "a feral fox";
+			BOARD.e9._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e10._characterType = "fox";
+			BOARD.e10._known = "a feral fox";
+			BOARD.e10._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e11._characterType = "fox";
+			BOARD.e11._known = "a feral fox";
+			BOARD.e11._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e12._characterType = "fox";
+			BOARD.e12._known = "a feral fox";
+			BOARD.e12._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e13._characterType = "fox";
+			BOARD.e13._known = "a feral fox";
+			BOARD.e13._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e14._characterType = "fox";
+			BOARD.e14._known = "a feral fox";
+			BOARD.e14._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e15._characterType = "fox";
+			BOARD.e15._known = "a feral fox";
+			BOARD.e15._power = 48;
+			BOARD.logicAdd("ENEMY");				
+		}
+		
+		private function level22():void
+		{
+			BOARD.e0._characterType = "ape";
+			BOARD.e0._known = "a chimpanzee warrior";
+			BOARD.e0._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "ape";
+			BOARD.e1._known = "a chimpanzee warrior";
+			BOARD.e1._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "ape";
+			BOARD.e2._known = "a guard of bananas";
+			BOARD.e2._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "ape";
+			BOARD.e3._known = "a guard of bananas";
+			BOARD.e3._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "ape";
+			BOARD.e4._known = "a guard of bananas";
+			BOARD.e4._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "ape";
+			BOARD.e5._known = "a guard of bananas";
+			BOARD.e5._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "ape";
+			BOARD.e6._known = "a guard of bananas";
+			BOARD.e6._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "ape";
+			BOARD.e7._known = "a guard of bananas";
+			BOARD.e7._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "ape";
+			BOARD.e8._known = "a guard of bananas";
+			BOARD.e8._power = 48;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "ape";
+			BOARD.e9._known = "a guard of bananas";
+			BOARD.e9._power = 48;
+			BOARD.logicAdd("ENEMY");				
+		}
+		
+		private function level23():void
+		{
+			BOARD.e0._characterType = "ape";
+			BOARD.e0._known = "a chimpanzee warrior";
+			BOARD.e0._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "ape";
+			BOARD.e1._known = "a chimpanzee warrior";
+			BOARD.e1._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "ape";
+			BOARD.e2._known = "a chimpanzee warrior";
+			BOARD.e2._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "ape";
+			BOARD.e3._known = "a damn dirty ape";
+			BOARD.e3._power = 72;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level24():void
+		{
+			BOARD.e0._characterType = "shoebill";
+			BOARD.e0._known = "an egg collector";
+			BOARD.e0._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "shoebill";
+			BOARD.e1._known = "an egg collector";
+			BOARD.e1._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "shoebill";
+			BOARD.e2._known = "an egg collector";
+			BOARD.e2._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "shoebill";
+			BOARD.e3._known = "an egg collector";
+			BOARD.e3._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "shoebill";
+			BOARD.e4._known = "an egg collector";
+			BOARD.e4._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "shoebill";
+			BOARD.e5._known = "an egg collector";
+			BOARD.e5._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "shoebill";
+			BOARD.e6._known = "an egg collector";
+			BOARD.e6._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "shoebill";
+			BOARD.e7._known = "an egg collector";
+			BOARD.e7._power = 60;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "shoebill";
+			BOARD.e8._known = "the protector of nests";
+			BOARD.e8._power = 72;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "shoebill";
+			BOARD.e9._known = "the protector of nests";
+			BOARD.e9._power = 72;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level25():void
+		{
+			BOARD.e0._characterType = "shoebill";
+			BOARD.e0._known = "a stone beaked bird";
+			BOARD.e0._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "shoebill";
+			BOARD.e1._known = "a stone beaked bird";
+			BOARD.e1._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "shoebill";
+			BOARD.e2._known = "a watcher of wormholes";
+			BOARD.e2._power = 72;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "shoebill";
+			BOARD.e3._known = "a watcher of wormholes";
+			BOARD.e3._power = 72;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "shoebill";
+			BOARD.e4._known = "a watcher of wormholes";
+			BOARD.e4._power = 72;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "shoebill";
+			BOARD.e5._known = "a watcher of wormholes";
+			BOARD.e5._power = 72;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level26():void
+		{
+			BOARD.e0._characterType = "platypus";
+			BOARD.e0._known = "a stressed platypus";
+			BOARD.e0._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "platypus";
+			BOARD.e1._known = "a stressed platypus";
+			BOARD.e1._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "platypus";
+			BOARD.e2._known = "a stressed platypus";
+			BOARD.e2._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "platypus";
+			BOARD.e3._known = "a stressed platypus";
+			BOARD.e3._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "platypus";
+			BOARD.e4._known = "a stressed platypus";
+			BOARD.e4._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "platypus";
+			BOARD.e5._known = "a stressed platypus";
+			BOARD.e5._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "platypus";
+			BOARD.e6._known = "a stressed platypus";
+			BOARD.e6._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "platypus";
+			BOARD.e7._known = "a dangerous platypus";
+			BOARD.e7._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "platypus";
+			BOARD.e8._known = "a stressed platypus";
+			BOARD.e8._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "platypus";
+			BOARD.e9._known = "a stressed platypus";
+			BOARD.e9._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e10._characterType = "platypus";
+			BOARD.e10._known = "a stressed platypus";
+			BOARD.e10._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e11._characterType = "platypus";
+			BOARD.e11._known = "a stressed platypus";
+			BOARD.e11._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e12._characterType = "platypus";
+			BOARD.e12._known = "a stressed platypus";
+			BOARD.e12._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e13._characterType = "platypus";
+			BOARD.e13._known = "a stressed platypus";
+			BOARD.e13._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e14._characterType = "platypus";
+			BOARD.e14._known = "a stressed platypus";
+			BOARD.e14._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e15._characterType = "platypus";
+			BOARD.e15._known = "a dangerous platypus";
+			BOARD.e15._power = 96;
+			BOARD.logicAdd("ENEMY");				
+		}
+		
+		private function level27():void
+		{
+			BOARD.e0._characterType = "platypus";
+			BOARD.e0._known = "a dangerous platypus";
+			BOARD.e0._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "platypus";
+			BOARD.e1._known = "a stressed platypus";
+			BOARD.e1._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "platypus";
+			BOARD.e2._known = "a stressed platypus";
+			BOARD.e2._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "platypus";
+			BOARD.e3._known = "a dangerous platypus";
+			BOARD.e3._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "platypus";
+			BOARD.e4._known = "a dangerous platypus";
+			BOARD.e4._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "platypus";
+			BOARD.e5._known = "a stressed platypus";
+			BOARD.e5._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "platypus";
+			BOARD.e6._known = "a stressed platypus";
+			BOARD.e6._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "platypus";
+			BOARD.e7._known = "a dangerous platypus";
+			BOARD.e7._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "platypus";
+			BOARD.e8._known = "a dangerous platypus";
+			BOARD.e8._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "platypus";
+			BOARD.e9._known = "a stressed platypus";
+			BOARD.e9._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e10._characterType = "platypus";
+			BOARD.e10._known = "a stressed platypus";
+			BOARD.e10._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e11._characterType = "platypus";
+			BOARD.e11._known = "a dangerous platypus";
+			BOARD.e11._power = 96;
+			BOARD.logicAdd("ENEMY");				
 		}
 	}
 }

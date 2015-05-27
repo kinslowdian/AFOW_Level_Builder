@@ -17,7 +17,7 @@
 		
 		public function create():void
 		{
-			level18();
+			level27();
 		}
 		
 		// TEST ONLY
@@ -704,6 +704,185 @@
 			BOARD.logicAddPortalsAuto(11);			
 		}
 		
+		private function level19():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 19;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_late collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_late";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_HEAVY]] = "pixels_flowerHeavy_late";
+			BOARD.classTypes.portal = "portal_top_late";
+			
+			BOARD.logicAddPortalsAuto(12);			
+		}
+		
+		private function level20():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 20;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_twilight collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_twilight";
+			BOARD.classTypes.portal = "portal_top_twilight";
+			
+			BOARD.logicAddPortalsAuto(2);			
+		}
+		
+		private function level21():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 21;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_twilight collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_twilight";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_HEAVY]] = "pixels_flowerHeavy_twilight";
+			BOARD.classTypes.portal = "portal_top_twilight";
+			
+			BOARD.logicAddPortalsAuto(10);			
+		}
+		
+		private function level22():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 22;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_early collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_early";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_HEAVY]] = "pixels_flowerHeavy_early";
+			BOARD.classTypes.portal = "portal_top_early";
+			
+			BOARD.logicAddPortalsAuto(16);			
+		}
+		
+		private function level23():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 23;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_early collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_early";
+			BOARD.classTypes.portal = "portal_top_early";
+			
+			BOARD.logicAddPortalsAuto(8);			
+		}
+		
+		private function level24():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 24;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.WATER, BOARD.WATER_EDGE];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_morning0 collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_morning0";
+			BOARD.classTypes[BOARD.tileArray[BOARD.WATER]] = "pixels_waterBase waterPool collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.WATER_EDGE]] = "pixels_waterEdge waterEdge tween-waterEdge";
+			BOARD.classTypes.portal = "portal_top_morning0";
+			
+			BOARD.logicAddPortalsAuto(2);			
+		}
+		
+		private function level25():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 25;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_morning0 collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_morning0";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_HEAVY]] = "pixels_flowerHeavy_morning0";
+			BOARD.classTypes.portal = "portal_top_morning0";
+			
+			BOARD.logicAddPortalsAuto(12);			
+		}
+		
+		private function level26():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 26;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT, BOARD.GRASS_HEAVY, BOARD.WATER, BOARD.WATER_EDGE];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_morning1 collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_morning1";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_HEAVY]] = "pixels_flowerHeavy_morning1";
+			BOARD.classTypes[BOARD.tileArray[BOARD.WATER]] = "pixels_waterBase waterPool collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.WATER_EDGE]] = "pixels_waterEdge waterEdge tween-waterEdge";
+			BOARD.classTypes.portal = "portal_top_morning1";
+			
+			BOARD.logicAddPortalsAuto(8);			
+		}
+		
+		private function level27():void
+		{
+			useAuto = true;
+			
+			// LEVEL SETUP
+			BOARD._gameLevel = 27;
+			
+			// LEVEL TILES - ARTWORK
+			BOARD.tileData = [BOARD.TREES, BOARD.GRASS_LIGHT];
+			
+			// AUTO FILL JSON
+			BOARD.classTypes = new Object();
+			BOARD.classTypes[BOARD.tileArray[BOARD.TREES]] = "pixels_forest_morning1 collideCheck-field";
+			BOARD.classTypes[BOARD.tileArray[BOARD.GRASS_LIGHT]] = "pixels_flowerLight_morning1";
+			BOARD.classTypes.portal = "portal_top_morning1";
+			
+			BOARD.logicAddPortalsAuto(2);			
+		}
 		
 		// SECRET
 		
