@@ -13,7 +13,7 @@ package com.kinslowdian
 		
 		public function create():void
 		{
-			level27();
+			level38();
 		}
 		
 		// TEST ONLY
@@ -831,7 +831,7 @@ package com.kinslowdian
 			BOARD.logicAdd("ENEMY");				
 		}
 		
-		private function level27():void
+		private function level30():void
 		{
 			BOARD.e0._characterType = "platypus";
 			BOARD.e0._known = "a dangerous platypus";
@@ -892,6 +892,503 @@ package com.kinslowdian
 			BOARD.e11._known = "a dangerous platypus";
 			BOARD.e11._power = 96;
 			BOARD.logicAdd("ENEMY");				
+		}
+		
+		private function level28():void
+		{
+			BOARD.e0._characterType = "frog";
+			BOARD.e0._known = "an overweight tadpole";
+			BOARD.e0._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "frog";
+			BOARD.e1._known = "an overweight tadpole";
+			BOARD.e1._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "frog";
+			BOARD.e2._known = "a bullfrog";
+			BOARD.e2._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "frog";
+			BOARD.e3._known = "a bullfrog";
+			BOARD.e3._power = 96;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level29():void
+		{
+			BOARD.e0._characterType = "frog";
+			BOARD.e0._known = "an overweight tadpole";
+			BOARD.e0._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "frog";
+			BOARD.e1._known = "an overweight tadpole";
+			BOARD.e1._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "frog";
+			BOARD.e2._known = "an overweight tadpole";
+			BOARD.e2._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "frog";
+			BOARD.e3._known = "an overweight tadpole";
+			BOARD.e3._power = 84;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "frog";
+			BOARD.e4._known = "a bullfrog";
+			BOARD.e4._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "frog";
+			BOARD.e5._known = "a bullfrog";
+			BOARD.e5._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "frog";
+			BOARD.e6._known = "a bullfrog";
+			BOARD.e6._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "frog";
+			BOARD.e7._known = "the bullfrog lord";
+			BOARD.e7._power = 118;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level30a():void
+		{
+			BOARD.e0._characterType = "bull";
+			BOARD.e0._known = "a grazing bull";
+			BOARD.e0._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "bull";
+			BOARD.e1._known = "a grazing bull";
+			BOARD.e1._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "bull";
+			BOARD.e2._known = "a grazing bull";
+			BOARD.e2._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "bull";
+			BOARD.e3._known = "a grazing bull";
+			BOARD.e3._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "bull";
+			BOARD.e4._known = "an aggressive bull";
+			BOARD.e4._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "bull";
+			BOARD.e5._known = "an aggressive bull";
+			BOARD.e5._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "bull";
+			BOARD.e6._known = "an aggressive bull";
+			BOARD.e6._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "bull";
+			BOARD.e7._known = "an aggressive bull";
+			BOARD.e7._power = 118;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level31():void
+		{
+			BOARD.e0._characterType = "bull";
+			BOARD.e0._known = "a sneaky bull";
+			BOARD.e0._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "bull";
+			BOARD.e1._known = "a sneaky bull";
+			BOARD.e1._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "bull";
+			BOARD.e2._known = "an aggressive bull";
+			BOARD.e2._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "bull";
+			BOARD.e3._known = "an aggressive bull";
+			BOARD.e3._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "bull";
+			BOARD.e4._known = "an aggressive bull";
+			BOARD.e4._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "bull";
+			BOARD.e5._known = "an aggressive bull";
+			BOARD.e5._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "bull";
+			BOARD.e6._known = "a sneaky bull";
+			BOARD.e6._power = 96;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "bull";
+			BOARD.e7._known = "a sneaky bull";
+			BOARD.e7._power = 96;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level32():void
+		{
+			BOARD.e0._characterType = "jackal";
+			BOARD.e0._known = "a hungry jackal";
+			BOARD.e0._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "jackal";
+			BOARD.e1._known = "a hungry jackal";
+			BOARD.e1._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "jackal";
+			BOARD.e2._known = "a hungry jackal";
+			BOARD.e2._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "jackal";
+			BOARD.e3._known = "a hungry jackal";
+			BOARD.e3._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "jackal";
+			BOARD.e4._known = "a hungry jackal";
+			BOARD.e4._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "jackal";
+			BOARD.e5._known = "a hungry jackal";
+			BOARD.e5._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "jackal";
+			BOARD.e6._known = "a hungry jackal";
+			BOARD.e6._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "jackal";
+			BOARD.e7._known = "a hungry jackal";
+			BOARD.e7._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "jackal";
+			BOARD.e8._known = "a hungry jackal";
+			BOARD.e8._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "jackal";
+			BOARD.e9._known = "a hungry jackal";
+			BOARD.e9._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e10._characterType = "jackal";
+			BOARD.e10._known = "a hungry jackal";
+			BOARD.e10._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e11._characterType = "jackal";
+			BOARD.e11._known = "a hungry jackal";
+			BOARD.e11._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e12._characterType = "jackal";
+			BOARD.e12._known = "a hungry jackal";
+			BOARD.e12._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e13._characterType = "jackal";
+			BOARD.e13._known = "a hungry jackal";
+			BOARD.e13._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e14._characterType = "jackal";
+			BOARD.e14._known = "a hungry jackal";
+			BOARD.e14._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e15._characterType = "jackal";
+			BOARD.e15._known = "a hungry jackal";
+			BOARD.e15._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e16._characterType = "jackal";
+			BOARD.e16._known = "the jackal of danger";
+			BOARD.e16._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e17._characterType = "jackal";
+			BOARD.e17._known = "the jackal of danger";
+			BOARD.e17._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e18._characterType = "jackal";
+			BOARD.e18._known = "the jackal of danger";
+			BOARD.e18._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e19._characterType = "jackal";
+			BOARD.e19._known = "the jackal of danger";
+			BOARD.e19._power = 130;
+			BOARD.logicAdd("ENEMY");				
+		}
+		
+		private function level33():void
+		{
+			BOARD.e0._characterType = "jackal";
+			BOARD.e0._known = "a hungry jackal";
+			BOARD.e0._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "jackal";
+			BOARD.e1._known = "a hungry jackal";
+			BOARD.e1._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "jackal";
+			BOARD.e2._known = "a hungry jackal";
+			BOARD.e2._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "jackal";
+			BOARD.e3._known = "a hungry jackal";
+			BOARD.e3._power = 118;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "jackal";
+			BOARD.e4._known = "the jackal of danger";
+			BOARD.e4._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "jackal";
+			BOARD.e5._known = "the jackal of danger";
+			BOARD.e5._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "jackal";
+			BOARD.e6._known = "the jackal of danger";
+			BOARD.e6._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "jackal";
+			BOARD.e7._known = "the jackal of danger";
+			BOARD.e7._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "jackal";
+			BOARD.e8._known = "the jackal of danger";
+			BOARD.e8._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "jackal";
+			BOARD.e9._known = "the jackal of danger";
+			BOARD.e9._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e10._characterType = "jackal";
+			BOARD.e10._known = "the jackal of danger";
+			BOARD.e10._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e11._characterType = "jackal";
+			BOARD.e11._known = "the jackal of rage";
+			BOARD.e11._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e12._characterType = "jackal";
+			BOARD.e12._known = "the jackal of rage";
+			BOARD.e12._power = 130;
+			BOARD.logicAdd("ENEMY");				
+		}
+		
+		private function level34():void
+		{
+			BOARD.e0._characterType = "bear";
+			BOARD.e0._known = "a huge grizzly bear";
+			BOARD.e0._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "bear";
+			BOARD.e1._known = "a huge grizzly bear";
+			BOARD.e1._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "bear";
+			BOARD.e2._known = "a huge grizzly bear";
+			BOARD.e2._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "bear";
+			BOARD.e3._known = "a hungry bear";
+			BOARD.e3._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "bear";
+			BOARD.e4._known = "a hungry bear";
+			BOARD.e4._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "bear";
+			BOARD.e5._known = "a hungry bear";
+			BOARD.e5._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "bear";
+			BOARD.e6._known = "a hungry bear";
+			BOARD.e6._power = 130;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "bear";
+			BOARD.e7._known = "a hungry bear";
+			BOARD.e7._power = 130;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level35():void
+		{
+			BOARD.e0._characterType = "bear";
+			BOARD.e0._known = "a huge grizzly bear";
+			BOARD.e0._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e1._characterType = "bear";
+			BOARD.e1._known = "a huge grizzly bear";
+			BOARD.e1._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e2._characterType = "bear";
+			BOARD.e2._known = "a huge grizzly bear";
+			BOARD.e2._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e3._characterType = "bear";
+			BOARD.e3._known = "a huge grizzly bear";
+			BOARD.e3._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e4._characterType = "bear";
+			BOARD.e4._known = "a huge grizzly bear";
+			BOARD.e4._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e5._characterType = "bear";
+			BOARD.e5._known = "a huge grizzly bear";
+			BOARD.e5._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e6._characterType = "bear";
+			BOARD.e6._known = "a huge grizzly bear";
+			BOARD.e6._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e7._characterType = "bear";
+			BOARD.e7._known = "a huge grizzly bear";
+			BOARD.e7._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e8._characterType = "bear";
+			BOARD.e8._known = "a huge grizzly bear";
+			BOARD.e8._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e9._characterType = "bear";
+			BOARD.e9._known = "a huge grizzly bear";
+			BOARD.e9._power = 142;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e10._characterType = "bear";
+			BOARD.e10._known = "a bear of death";
+			BOARD.e10._power = 154;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e11._characterType = "bear";
+			BOARD.e11._known = "a bear of death";
+			BOARD.e11._power = 154;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e12._characterType = "bear";
+			BOARD.e12._known = "a bear of death";
+			BOARD.e12._power = 154;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e13._characterType = "bear";
+			BOARD.e13._known = "a bear of death";
+			BOARD.e13._power = 154;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e14._characterType = "bear";
+			BOARD.e14._known = "a bear of death";
+			BOARD.e14._power = 154;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e15._characterType = "bear";
+			BOARD.e15._known = "a bear of death";
+			BOARD.e15._power = 154;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e16._characterType = "bear";
+			BOARD.e16._known = "the bear of danger";
+			BOARD.e16._power = 154;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e17._characterType = "bear";
+			BOARD.e17._known = "the bear of danger";
+			BOARD.e17._power = 154;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e18._characterType = "bear";
+			BOARD.e18._known = "a wormhole god";
+			BOARD.e18._power = 166;
+			BOARD.logicAdd("ENEMY");
+			
+			BOARD.e19._characterType = "bear";
+			BOARD.e19._known = "a wormhole god";
+			BOARD.e19._power = 166;
+			BOARD.logicAdd("ENEMY");				
+		}
+		
+		private function level36():void
+		{
+			
+		}
+		
+		private function level37():void
+		{
+			BOARD.e0._characterType = "rabbit";
+			BOARD.e0._known = "the rabbit warchief";
+			BOARD.e0._power = 200;
+			BOARD.logicAdd("ENEMY");			
+		}
+		
+		private function level38():void
+		{
+			
+		}
+		
+		private function level39():void
+		{
+			
+		}
+		
+		private function level40():void
+		{
+			
 		}
 	}
 }
